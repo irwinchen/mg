@@ -1,0 +1,98 @@
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+  }
+body { 
+    background-color:#222;
+    font-family: adelle-sans, sans-serif;
+    color:#ffffff;
+    font-style: normal;
+    font-size:2.5vmin;
+}
+h1 {
+    font-size: 3vw;
+    font-weight:800;
+    text-shadow: #111 1px 0 7px;
+  }
+  .patterns {
+    background-image: url(images/diagram_bg.svg), linear-gradient(#222222, #222222);
+    background-repeat:no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    background-attachment: fixed;
+    background-size:cover;
+  }
+  .stage { cursor: pointer; }
+  .stage .btn {
+    color: #fff;
+    text-decoration:none;
+    font-weight:800;
+    font-size:1em;
+    padding: 0;
+    outline: none;
+    margin:0;
+  }
+  .stage .btn:active {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .take>.stage:hover { background-color: #2B913B;  }
+  .hide>.stage:hover { background-color: #2652A1; }
+  .move>.stage:hover { background-color: #F05C23; }
+  .network>.stage:hover { background-color: #1D8B8C; }
+  .coverup>.stage:hover { background-color: #A11C33; }
+  .enjoy>.stage:hover { background-color: #6C3A8C; }
+
+  .stage:hover + .desc {
+    opacity: 1.0;
+  }
+
+
+.bg-dark { background-color:#222222;}
+.page { 
+    height: 100vh; 
+    /* border:1px red solid; */
+}
+.cover {
+  background-image: url("images/example-portrait-222.png");
+  background-position: center center;
+  background-repeat:no-repeat;
+}
+
+.patterns { 
+    height:200vh;
+}
+
+.gridbox {
+    display:grid;
+    grid-template-rows: 1fr 3em 1fr;
+}
+.cardbox { 
+    margin: auto;
+}
+
+.card { 
+  height: 20vh;
+  opacity: .2;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+.stage { font-size: 1.1em; font-weight:800; border: 1px white solid; padding: 1em 2em;}
+.desc { 
+    font-style: italic; 
+    font-size: .7em; 
+    padding-top: 2em;
+    opacity: 0.0;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
