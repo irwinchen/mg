@@ -20,7 +20,7 @@
     <nav class="navbar navbar-dark fixed-top" style="background-color: transparent;">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="images/mintz-logo.svg" alt="" width="104" height="60" class="d-inline-block align-text-top">
+            <img src="images/mintz-logo.svg" alt="MG Logo" width="104" height="60" class="d-inline-block align-text-top">
           </a>
         </div>
       </nav>
@@ -69,19 +69,14 @@
                 <div class="row h-100">
                     <div class="col take gridbox">
                         <div class="cardbox">
+
                             <img class="img-fluid card" src="images/take_kickback.png" />
                         </div>
                         <div class="stage text-center align-self-center">
-                            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#CardModal" data-front="take_kickback.png" data-h3="Take" data-h4="Understand the support structure around movement, storage and insurance of high value art" data-p="Target art insurers and transportation companies to learn where the art is and how it's owned">
                                 Take
                               </button>
-                              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                    <img src="images/take_kickback.png" />
-                                    </div>
-                                </div>
-                            </div>
+                              
                         </div>
                         <div class="desc text-center">
                             <p>It all starts with a bribe, a shady deal, or a kickback scheme.</p>
@@ -92,7 +87,10 @@
                             <img class="img-fluid card" src="images/hide_crypto.png" />
                         </div>
                         <div class="stage text-center align-self-center">
-                            Hide
+                            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#CardModal" data-front="hide_crypto.png" data-h3="Hide" data-h4="Understand the support structure around movement, storage and insurance of high value art" data-p="Target art insurers and transportation companies to learn where the art is and how it's owned">
+                                Hide
+                              </button>
+                              
                         </div>
                         <div class="desc text-center">
                             <p>Banks and lawyers can help create structures, shell companies, and other lock boxes to hide dirty money.</p>
@@ -103,7 +101,9 @@
                             <img class="img-fluid card" src="images/move_autorewire.png" />
                         </div>
                         <div class="stage text-center align-self-center">
-                            Move
+                            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#CardModal" data-front="move_autorewire.png" data-h3="Move" data-h4="Understand the support structure around movement, storage and insurance of high value art" data-p="Target art insurers and transportation companies to learn where the art is and how it's owned">
+                                Move
+                              </button>
                         </div>
                         <div class="desc text-center">
                             <p>In the digital age, money moves through wires, but physical assets can have their advantages.</p>
@@ -114,7 +114,9 @@
                             <img class="img-fluid card" src="images/network_daughter.png" />
                         </div>
                         <div class="stage text-center align-self-center">
-                            Network
+                            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#CardModal" data-front="network_daughter.png" data-h3="Network" data-h4="Understand the support structure around movement, storage and insurance of high value art" data-p="Target art insurers and transportation companies to learn where the art is and how it's owned">
+                                Network
+                              </button>
                         </div>
                         <div class="desc text-center">
                             <p>Usually, clever spouses, siblings, childhood friends, and children are instrumental to hiding dirty money.</p>
@@ -125,7 +127,9 @@
                             <img class="img-fluid card" src="images/coverup_frontman.png" />
                         </div>
                         <div class="stage text-center align-self-center">
-                            Cover Up
+                            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#CardModal" data-front="coverup_frontman.png" data-h3="CoverUp" data-h4="Understand the support structure around movement, storage and insurance of high value art" data-p="Target art insurers and transportation companies to learn where the art is and how it's owned">
+                                Cover Up
+                              </button>
                         </div>
                         <div class="desc text-center">
                             <p>Sometimes attention needs to be drawn away, evidence concealed, traces hidden.</p>
@@ -136,14 +140,39 @@
                             <img class="img-fluid card" src="images/enjoy_mansion.png" />
                         </div>
                         <div class="stage text-center align-self-center">
-                            Enjoy
+                            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#CardModal" data-front="enjoy_mansion.png" data-h3="Enjoy" data-h4="Understand the support structure around movement, storage and insurance of high value art" data-p="Target art insurers and transportation companies to learn where the art is and how it's owned">
+                                Enjoy
+                              </button>
                         </div>
                         <div class="desc text-center">
                             <p>Dirty money likes to come out and play. Shopping sprees, yachts, mansions, etc.</p>
                         </div>
                     </div>
                 </div>
-                
+                <div class="modal fade" id="CardModal" tabindex="-1" aria-labelledby="Card" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-transparent">
+                            <div class="cardbox">
+                                <div class="card__">
+                                    <div class="card__inner">
+                                        <div class="card__face card__face--front">Card Front</div>
+                                        <div class="card__face card__face--back">
+                                            <div class="card__content">
+                                                <div class="card__header">
+                                                    <h3>Hide</h3>
+                                                </div>
+                                                <div class="card__body">
+                                                    <h4>Understand the support structure around movement, storage and insurance of high value art</h4>
+                                                    <p>Target art insurers and transportation companies to learn where the art is and how it's owned</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
 
@@ -153,5 +182,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/ScrollTrigger.min.js"></script>
     <script src="scripts/ScrollSmoother.min.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="card.js"></script>
   </body>
 </html>

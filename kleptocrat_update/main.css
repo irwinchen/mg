@@ -1,3 +1,13 @@
+:root {
+  --take: #2B913B;
+  --hide: #2652A1;
+  --move: #F05C23;
+  --network: #1D8B8C;
+  --coverup: #A11C33;
+  --enjoy: #6C3A8C;
+}
+
+
 .vertical-center {
     min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
     min-height: 100vh; /* These two lines are counted as one :-)       */
@@ -12,12 +22,7 @@ body {
     font-style: normal;
     font-size:2.5vmin;
 }
-.btn-link { color: none;}
-button:focus, .button:focus, button:active, .btn-link:focus {
 
-  box-shadow:none !important;
-    outline:0px !important;
-}
 h1 {
     font-size: 3vw;
     font-weight:800;
@@ -31,32 +36,7 @@ h1 {
     background-attachment: fixed;
     background-size:cover;
   }
-  .stage { cursor: pointer; }
-  .stage .btn {
-    color: #fff;
-    text-decoration:none;
-    font-weight:800;
-    font-size:1em;
-    padding: 0;
-    outline: none;
-    margin:0;
-  }
-  .stage .btn:active {
-    outline: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
   
-  .take>.stage:hover { background-color: #2B913B;  }
-  .hide>.stage:hover { background-color: #2652A1; }
-  .move>.stage:hover { background-color: #F05C23; }
-  .network>.stage:hover { background-color: #1D8B8C; }
-  .coverup>.stage:hover { background-color: #A11C33; }
-  .enjoy>.stage:hover { background-color: #6C3A8C; }
-
-  .stage:hover + .desc {
-    opacity: 1.0;
-  }
-
 
 .bg-dark { background-color:#222222;}
 .page { 
@@ -67,10 +47,47 @@ h1 {
   background-image: url("images/example-portrait-222.png");
   background-position: center center;
   background-repeat:no-repeat;
+  background-attachment: fixed;
 }
 
 .patterns { 
     height:200vh;
+}
+.modal-content, .modal-backdrop { background-color: none !important;}
+.btn-link { color: none;}
+button:focus, .button:focus, button:active, .btn-link:focus {
+  box-shadow:none !important;
+    outline:0px !important;
+}
+.stage { 
+ 
+}
+.stage .btn {
+  color: #fff;
+  text-decoration:none;
+  font-size: 1.1em; 
+  font-weight:800; 
+  border: 1px white solid; 
+  padding: 1em 0;
+  outline: none;
+  margin:0;
+  border-radius: 0;
+  width: 100%;
+}
+.stage .btn:active {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.take>.stage:hover { background-color: #2B913B;  }
+.hide>.stage:hover { background-color: #2652A1; }
+.move>.stage:hover { background-color: #F05C23; }
+.network>.stage:hover { background-color: #1D8B8C; }
+.coverup>.stage:hover { background-color: #A11C33; }
+.enjoy>.stage:hover { background-color: #6C3A8C; }
+
+.stage:hover + .desc {
+  opacity: 1.0;
 }
 
 .gridbox {
@@ -83,14 +100,14 @@ h1 {
 
 .card { 
   height: 20vh;
-  opacity: .2;
+  /* opacity: .2; */
   -webkit-transition: all 400ms ease-in-out;
   -moz-transition: all 400ms ease-in-out;
   -ms-transition: all 400ms ease-in-out;
   -o-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
 }
-.stage { font-size: 1.1em; font-weight:800; border: 1px white solid; padding: 1em 2em;}
+
 .desc { 
     font-style: italic; 
     font-size: .7em; 
@@ -101,4 +118,71 @@ h1 {
   -ms-transition: all 400ms ease-in-out;
   -o-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
+}
+
+
+.card__ {
+  margin: 50px auto 0;
+  width: 400px;
+  height: 600px;
+  perspective: 1000px;
+  }
+.card__inner {
+  width:100%;
+  height:100%;
+  transition: transform .5s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+.card__inner.is-flipped {
+  transform: rotateY(180deg);
+}
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+.card__face--front {
+  background-color:transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat:none;
+  background-size:cover;
+}
+
+.card__face--back {
+  transform: rotateY(180deg);
+}
+.card__content {
+width: 100%;
+height: 100%;
+}
+.card__body {
+padding: 30px;
+}
+.card__body h4 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.2em;
+}
+.card__body p {
+  text-align:center;
+  line-height:1.2em;
+  font-size:1em;
+}
+.card__header h3 {
+  text-align: center;
+  font-size:1em;
+  font-weight:600;
+  padding: 10px;
+}
+.card__face--back {
+  background-color: var(--enjoy);
 }
