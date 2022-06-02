@@ -14,33 +14,42 @@ var title = svg
     .text("Citigroup / BLMIS Connections");
 
 var box = svg.append("g")
-.attr("class", "box")
-.append("rect")
-.attr("width", 200)
-.attr("height", 40)
-.attr("stroke", "red")
-.attr("x", (width/3)-130)
-.attr("y", 0 - (height/3))
-.attr("fill", "none");
+    .attr("class", "box")
+    .append("rect")
+    .attr("width", 200)
+    .attr("height", 40)
+    .attr("stroke", "red")
+    .attr("x", (width/3)-130)
+    .attr("y", 0 - (height/3))
+    .attr("fill", "none");
 
 var conf = d3.select(".box").append("text")
-.attr("text-anchor", "middle")
-.style("font-size", "11px")
-.attr("x", (width/3)-28)
-.attr("y", 0 - (height/3)+18)
-.attr("fill", "red")
-.text("PRIVILEGED AND CONFIDENTIAL");
+    .attr("text-anchor", "middle")
+    .style("font-size", "11px")
+    .attr("x", (width/3)-28)
+    .attr("y", 0 - (height/3)+18)
+    .attr("fill", "red")
+    .text("PRIVILEGED AND CONFIDENTIAL");
 
 var atty = d3.select(".box").append("text")
-.attr("text-anchor", "middle")
-.style("font-size", "11px")
-.attr("x", (width/3)-27)
-.attr("y", 0 - (height/3)+31)
-.attr("fill", "red")
-.text("ATTORNEY WORK PRODUCT");
+    .attr("text-anchor", "middle")
+    .style("font-size", "11px")
+    .attr("x", (width/3)-27)
+    .attr("y", 0 - (height/3)+31)
+    .attr("fill", "red")
+    .text("ATTORNEY WORK PRODUCT");
 
 d3.json("data.json").then(function(graph) {
     // if (error) throw error;
+
+    var link = d3.select("svg")
+    .append("g")
+    .attr("class", "links")
+    .selectAll("line")
+    .data(graph.links)
+    .enter().append("line")
+    .attr("stroke", "#aaa")
+    .attr("stroke-width", 1);
 
     var node = d3.select("svg")
     .append("g")
@@ -56,23 +65,28 @@ d3.json("data.json").then(function(graph) {
         .attr("data-tippy-content", function(d) {
             return "<b>"+ d.id + "</b><br/>" + d.description;
         })
-    .attr("class", "tt");
+    .attr("class", "tt")
+    .attr("stroke-width", 3)
+    .attr("stroke", function(d){
+        if (d.contact_type == "Key Contact") {
+            return "goldenrod";
+        } else {
+            return "none";
+        }
+    });
 
-    var link = d3.select("svg")
-    .append("g")
-    .attr("class", "links")
-    .selectAll("line")
-    .data(graph.links)
-    .enter().append("line")
-    .attr("stroke-width", 2);
+    
 
     var simulation = d3.forceSimulation(graph.nodes)
-    .force("charge", d3.forceCollide().radius(10))
+    .force("charge", d3.forceCollide().radius(20))
+    .force("link", d3.forceLink(graph.links).id(d => d.id).strength(0))
     .force("r", d3.forceRadial(function(d) {
         return d.proximity * 80;
-    }))
-    .force("link", d3.forceLink().id(function(d) { return d.id; }).strength(.1))
+    }).strength(1))
     .on("tick", ticked);
+    // simulation.stop();
+    // simulation.force("link")
+    //     .links(graph.links);
 
     var labels = node.append("text")
       .text(function(d) {
@@ -81,11 +95,10 @@ d3.json("data.json").then(function(graph) {
       .attr('x', 8)
       .attr('y', 3);
 
-      
-
     tippy('[data-tippy-content]', {
     allowHTML: true
 });
+
 function ticked() {
     link
         .attr("x1", function(d) { return d.source.x; })
