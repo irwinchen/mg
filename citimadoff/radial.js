@@ -2,9 +2,9 @@ var pointScale = d3.scaleOrdinal()
   .domain(["Person", "Entity", "Division", "Fund"])
   .range(["#1f77b4","#ff7f0e","#2ca02c","#d62728"]);
 
-  var symbols = d3.scaleOrdinal()
-  .domain(["Person", "Entity", "Division", "Fund"])
-  .range([d3.symbolCircle, d3.symbolSquare, d3.symbolCross, d3.symbolTriangle]);
+var symbols = d3.scaleOrdinal()
+.domain(["Person", "Entity", "Division", "Fund"])
+.range([d3.symbolCircle, d3.symbolSquare, d3.symbolCross, d3.symbolTriangle]);
 
 var svg = d3.select("svg"),
 width = +svg.attr("width"),
@@ -81,26 +81,23 @@ d3.json("newdata.json").then(function(graph) {
                 return "none";
             }
         });
-    // var circles = node.append("circle")
-    // .attr("r", 7)
-    // .attr("fill", function(d) { return pointScale(d.type); })
-    // .attr("data-bs-toggle", "tooltip")
-    //     .attr("data-tippy-content", function(d) {
-    //         return "<b>"+ d.id + "</b><br/>" + d.description;
-    //     })
-    // .attr("class", "tt")
-    // .attr("stroke-width", 3)
-    // .attr("stroke", function(d){
-    //     if (d.contact_type == "Key Contact") {
-    //         return "goldenrod";
-    //     } else {
-    //         return "none";
-    //     }
-    // });
 
+    node.on("mouseover", function(d){
+        link.style("stroke-width", function(l){
+            if (d === l.source || d === l.target) {
+                return 4;
+            } else {
+                return 1;
+            } 
+        });
+    });
+
+    node.on("mouseout", function(){
+        link.style("stroke-width", 1);
+    });
 
     var simulation = d3.forceSimulation(graph.nodes)
-    .force("charge", d3.forceCollide().radius(20))
+    .force("charge", d3.forceCollide().radius(15))
     .force("link", d3.forceLink(graph.links).id(d => d.id).strength(0))
     .force("r", d3.forceRadial(function(d) {
         return d.proximity * 80;
@@ -115,7 +112,8 @@ d3.json("newdata.json").then(function(graph) {
         return d.id;
       })
       .attr('x', 8)
-      .attr('y', 3);
+      .attr('y', 3)
+      .attr("opacity", .5);
 
     tippy('[data-tippy-content]', {
     allowHTML: true
