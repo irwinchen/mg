@@ -1,9 +1,14 @@
 var pointScale = d3.scaleOrdinal()
   .domain(["Person", "Entity", "Division", "Fund"])
   .range(["#1f77b4","#ff7f0e","#2ca02c","#d62728"]);
-  var svg = d3.select("svg"),
-    width = +svg.attr("width"),
-    height = +svg.attr("height");
+
+  var symbols = d3.scaleOrdinal()
+  .domain(["Person", "Entity", "Division", "Fund"])
+  .range([d3.symbolCircle, d3.symbolSquare, d3.symbolCross, d3.symbolTriangle]);
+
+var svg = d3.select("svg"),
+width = +svg.attr("width"),
+height = +svg.attr("height");
 
 var title = svg
     .append("text")
@@ -39,7 +44,7 @@ var atty = d3.select(".box").append("text")
     .attr("fill", "red")
     .text("ATTORNEY WORK PRODUCT");
 
-d3.json("data.json").then(function(graph) {
+d3.json("newdata.json").then(function(graph) {
     // if (error) throw error;
 
     var link = d3.select("svg")
@@ -58,24 +63,41 @@ d3.json("data.json").then(function(graph) {
     .data(graph.nodes)
     .enter().append("g");
 
-    var circles = node.append("circle")
-    .attr("r", 7)
-    .attr("fill", function(d) { return pointScale(d.type); })
-    .attr("data-bs-toggle", "tooltip")
+    var shapes = node.append("g")
+        .append("path")
+        .attr("fill", function(d) { return pointScale(d.type); })
+        // .attr("d", d3.symbol().type(d3.symbolSquare))
+        .attr("d", d3.symbol().type(function(d) { return symbols(d.type); }))
+        .attr("data-bs-toggle", "tooltip")
         .attr("data-tippy-content", function(d) {
             return "<b>"+ d.id + "</b><br/>" + d.description;
         })
-    .attr("class", "tt")
-    .attr("stroke-width", 3)
-    .attr("stroke", function(d){
-        if (d.contact_type == "Key Contact") {
-            return "goldenrod";
-        } else {
-            return "none";
-        }
-    });
+        .attr("class", "tt")
+        .attr("stroke-width", 3)
+        .attr("stroke", function(d){
+            if (d.contact_type == "Key Contact") {
+                return "goldenrod";
+            } else {
+                return "none";
+            }
+        });
+    // var circles = node.append("circle")
+    // .attr("r", 7)
+    // .attr("fill", function(d) { return pointScale(d.type); })
+    // .attr("data-bs-toggle", "tooltip")
+    //     .attr("data-tippy-content", function(d) {
+    //         return "<b>"+ d.id + "</b><br/>" + d.description;
+    //     })
+    // .attr("class", "tt")
+    // .attr("stroke-width", 3)
+    // .attr("stroke", function(d){
+    //     if (d.contact_type == "Key Contact") {
+    //         return "goldenrod";
+    //     } else {
+    //         return "none";
+    //     }
+    // });
 
-    
 
     var simulation = d3.forceSimulation(graph.nodes)
     .force("charge", d3.forceCollide().radius(20))
@@ -98,6 +120,18 @@ d3.json("data.json").then(function(graph) {
     tippy('[data-tippy-content]', {
     allowHTML: true
 });
+
+svg.append("g")
+    .attr("class", "legendOrdinal")
+    .attr("transform", "translate(-450,140)");
+
+var legendOrdinal = d3.legendColor()
+.shape("path", d3.symbol().type(d3.symbolCircle).size(100)())
+.shapePadding(10)
+.scale(pointScale);
+
+svg.select(".legendOrdinal")
+.call(legendOrdinal);
 
 function ticked() {
     link
