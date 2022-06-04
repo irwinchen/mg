@@ -2,9 +2,19 @@ var pointScale = d3.scaleOrdinal()
   .domain(["Person", "Entity", "Division", "Fund"])
   .range(["#1f77b4","#ff7f0e","#2ca02c","#d62728"]);
 
+var triangleU = d3.symbol().type(d3.symbolTriangle)(),
+circle = d3.symbol().type(d3.symbolCircle)(),
+cross = d3.symbol().type(d3.symbolCross)(),
+square = d3.symbol().type(d3.symbolSquare)();
+
 var symbols = d3.scaleOrdinal()
 .domain(["Person", "Entity", "Division", "Fund"])
 .range([d3.symbolCircle, d3.symbolSquare, d3.symbolCross, d3.symbolTriangle]);
+
+var symbolScale =  d3.scaleOrdinal()
+  .domain(["Person", "Entity", "Division", "Fund"])
+  .range([ circle, square, cross, triangleU] );
+
 
 let zoom = d3.zoom()
   .on('zoom', handleZoom);
@@ -70,7 +80,7 @@ d3.json("newdata.json").then(function(graph) {
         .append("path")
         .attr("fill", function(d) { return pointScale(d.type); })
         // .attr("d", d3.symbol().type(d3.symbolSquare))
-        .attr("d", d3.symbol().type(function(d) { return symbols(d.type); }))
+        .attr("d", d3.symbol().type(function(d) { return symbols(d.type); }).size(100))
         .attr("data-bs-toggle", "tooltip")
         .attr("data-tippy-content", function(d) {
             return "<b>"+ d.id + "</b><br/>" + d.description;
@@ -103,7 +113,7 @@ d3.json("newdata.json").then(function(graph) {
     .force("charge", d3.forceCollide().radius(20))
     .force("link", d3.forceLink(graph.links).id(d => d.id).strength(0))
     .force("r", d3.forceRadial(function(d) {
-        return d.proximity * 150;
+        return d.proximity * 130;
     }).strength(1))
     .on("tick", ticked);
     // simulation.stop();
@@ -123,16 +133,18 @@ d3.json("newdata.json").then(function(graph) {
 });
 
 svg.append("g")
-    .attr("class", "legendOrdinal")
-    .attr("transform", "translate(-450,140)");
+    .attr("class", "legendSymbol")
+    .attr("transform", "translate(-450,180)");
 
-var legendOrdinal = d3.legendColor()
-.shape("path", d3.symbol().type(d3.symbolCircle).size(100)())
-.shapePadding(10)
-.scale(pointScale);
+var legendPath = d3.legendSymbol()
+.scale(symbolScale)
+.orient("vertical")
+.labelWrap(30)
+.title("LEGEND")
+.on("cellclick", function(d){ console.log(d)});
 
-svg.select(".legendOrdinal")
-.call(legendOrdinal);
+svg.select(".legendSymbol")
+  .call(legendPath);
 
 function ticked() {
     link
