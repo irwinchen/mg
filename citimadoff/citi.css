@@ -8,3 +8,7 @@ line {
   }
 
   .nodes { cursor: pointer;}
+
+  .legendSymbol path {
+  fill: #999;
+}

@@ -107,7 +107,7 @@ d3.json("data_jun7.json").then(function(graph) {
         .attr("stroke-width", 3)
         .attr("stroke", function(d){
             if (d.contact_type == "Key Contact") {
-                return "#278BD2";
+                return "black";
             } else {
                 return "none";
             }
@@ -191,6 +191,8 @@ var legendPath = d3.legendSymbol()
 .scale(symbolScale)
 .orient("vertical")
 .labelWrap(30)
+.shapePadding(4)
+.labelOffset(3)
 .title("LEGEND");
 
 svg.select(".legendSymbol")
@@ -199,7 +201,7 @@ svg.select(".legendSymbol")
 // Draw Color Legend
 svg.append("g")
     .attr("class", "legendOrdinal")
-    .attr("transform", "translate(-444,260)");
+    .attr("transform", "translate(-444,255)");
 
 var legendOrdinal = d3.legendColor()
     .shape("path", d3.symbol().type(d3.symbolCircle).size(80)())
@@ -207,6 +209,22 @@ var legendOrdinal = d3.legendColor()
 
 svg.select(".legendOrdinal")
     .call(legendOrdinal);
+
+var keyLegend = svg.select(".legendOrdinal")
+.append("circle")
+.attr("r", 5)
+.attr("fill", "#999")
+.attr("stroke", "black")
+.attr("stroke-width", 2)
+.attr("x", 0)
+.attr("y", 0)
+.attr("transform", "translate(0, 42)");
+
+var keyLegendText = svg.select(".legendOrdinal")
+.append("text")
+.attr("x", 15)
+.attr("y", 46)
+.text("Key Contact");
 
 function ticked() {
     link
