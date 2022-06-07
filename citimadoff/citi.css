@@ -6,3 +6,5 @@ line {
     font-family: sans-serif;
     font-size: 10px;
   }
+
+  .nodes { cursor: pointer;}

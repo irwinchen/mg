@@ -2,6 +2,10 @@ var colorScale = d3.scaleOrdinal()
   .domain(["Person", "Entity", "Division", "Fund"])
   .range(["#1f77b4","#ff7f0e","#2ca02c","#d62728"]);
 
+  var legendColor = d3.scaleOrdinal()
+    .domain(["Current Citi Employee", "Former", "Other"])
+    .range(["#DC322F", "#00AB93", "#DFA91E"]);
+
 var triangleU = d3.symbol().type(d3.symbolTriangle)(),
 circle = d3.symbol().type(d3.symbolCircle)(),
 cross = d3.symbol().type(d3.symbolCross)(),
@@ -92,8 +96,7 @@ d3.json("data_jun7.json").then(function(graph) {
                 return "#DFA91E";
             }
         })
-        // .attr("d", d3.symbol().type(d3.symbolSquare))
-        .attr("d", d3.symbol().type(function(d) { return symbols(d.type); }).size(120))
+        .attr("d", d3.symbol().type(function(d) { return symbols(d.type); }).size(140))
         .attr("data-bs-toggle", "tooltip")
         .attr("data-tippy-content", function(d) {
             return "<b>"+ d.id + "</b><br/>" + d.description;
@@ -110,26 +113,14 @@ d3.json("data_jun7.json").then(function(graph) {
 
     node.on("mouseover", mouseOver(.1))
         .on("mouseout", mouseOut);
-    // node.on("mouseover", function(d){
-    //     link.style("stroke-width", function(l){
-    //         if (d === l.source || d === l.target) {
-    //             return 4;
-    //         } else {
-    //             return 1;
-    //         } 
-    //     });
-    // });
 
-    // node.on("mouseout", function(){
-    //     link.style("stroke-width", 1);
-    // });
 
     var simulation = d3.forceSimulation(graph.nodes)
     .force("charge", d3.forceCollide().radius(20))
     .force("link", d3.forceLink(graph.links).id(d => d.id).strength(0))
     .force("r", d3.forceRadial(function(d) {
-        return d.proximity * 100;
-    }).strength(.5))
+        return d.proximity * 90;
+    }).strength(1))
     .on("tick", ticked);
     // simulation.stop();
     simulation.force("link")
@@ -139,7 +130,7 @@ d3.json("data_jun7.json").then(function(graph) {
       .text(function(d) {
         return d.id;
       })
-      .attr('x', 8)
+      .attr('x', 10)
       .attr('y', 3)
       .attr("opacity", .5);
 
@@ -183,10 +174,13 @@ d3.json("data_jun7.json").then(function(graph) {
         link.style("stroke", "#333");
     }
 
-//     tippy('[data-tippy-content]', {
-//     allowHTML: true
-// });
+    tippy('[data-tippy-content]', {
+    allowHTML: true,
+    hideOnClick: 'true',
+    trigger: 'click'
+});
 
+// Draw Symbol Legend
 svg.append("g")
     .attr("class", "legendSymbol")
     .attr("transform", "translate(-450,180)");
@@ -195,11 +189,22 @@ var legendPath = d3.legendSymbol()
 .scale(symbolScale)
 .orient("vertical")
 .labelWrap(30)
-.title("LEGEND")
-.on("cellclick", function(d){ console.log(d)});
+.title("LEGEND");
 
 svg.select(".legendSymbol")
   .call(legendPath);
+
+// Draw Color Legend
+svg.append("g")
+    .attr("class", "legendOrdinal")
+    .attr("transform", "translate(-444,260)");
+
+var legendOrdinal = d3.legendColor()
+    .shape("path", d3.symbol().type(d3.symbolCircle).size(80)())
+    .scale(legendColor);
+
+svg.select(".legendOrdinal")
+    .call(legendOrdinal);
 
 function ticked() {
     link
