@@ -38,7 +38,7 @@ var title = svg
     .text("Citigroup / BLMIS Connections");
 
 var box = svg.append("g")
-    .attr("class", "box")
+    .attr("class", "box")   
     .append("rect")
     .attr("width", 200)
     .attr("height", 40)
@@ -222,12 +222,12 @@ function ticked() {
 });
 
 function handleZoom(e) {
-    d3.select('svg g')
+    d3.select('svg g.graph')
       .attr('transform', e.transform);
   }
 
 function initZoom() {
-    d3.select('svg g').transition().call(zoom.scaleBy, .55);
+    d3.select('svg g.graph').transition().call(zoom.scaleBy, .55);
 d3.select('svg')
     .call(zoom);
 }
