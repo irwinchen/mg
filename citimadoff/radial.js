@@ -20,9 +20,11 @@ var symbolScale =  d3.scaleOrdinal()
   .range([ circle, square, cross, triangleU] );
 
 
-let zoom = d3.zoom()
-  .on('zoom', handleZoom);
 
+let zoom = d3.zoom()
+    .scaleExtent([.5,2])
+  .on('zoom', handleZoom);
+  
 var svg = d3.select("svg"),
 width = +svg.attr("width"),
 height = +svg.attr("height");
