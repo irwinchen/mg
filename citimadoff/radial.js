@@ -227,6 +227,7 @@ function handleZoom(e) {
   }
 
 function initZoom() {
+    d3.select('svg g').transition().call(zoom.scaleBy, .55);
 d3.select('svg')
     .call(zoom);
 }
