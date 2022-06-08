@@ -1998,6 +1998,26 @@
             "source": "Alternative Investments",
             "target": "Ken McDonald",
             "description": ""
+          },
+          {
+            "source": "Harry Markopolos",
+            "target": "Michael Ocrant",
+            "description": "Co-author of Markopolos' book, 'No One Would Listen: A True Financial Thiller'"
+          },
+          {
+            "source": "Neil Chelo",
+            "target": "Michael Ocrant",
+            "description": "Co-author of Markopolos' book, 'No One Would Listen: A True Financial Thiller'"
+          },
+          {
+            "source": "Frank Casey",
+            "target": "Michael Ocrant",
+            "description": "Co-author of Markopolos' book, 'No One Would Listen: A True Financial Thiller'"
+          },
+          {
+            "source": "Frank Casey",
+            "target": "Neil Chelo",
+            "description": "Co-author of Markopolos' book, 'No One Would Listen: A True Financial Thiller'"
           }
        ]
 }
