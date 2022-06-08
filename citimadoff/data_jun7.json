@@ -1278,6 +1278,726 @@
           "source": "Bernard L. Madoff Investment Securities LLC",
           "target": "Ramesh Gupta",
           "description": "Scheduled to attend cancelled meeting with Madoff (April 2006)"
-        }
+        },
+        {
+            "source": "Citigroup Global Markets Limited",
+            "target": "Erwin Parviz",
+            "description": ""
+          },
+          {
+            "source": "Citigroup Global Markets Limited",
+            "target": "Marc Fisher",
+            "description": ""
+          },
+          {
+            "source": "Citigroup Global Markets, Inc.",
+            "target": "Matthew Nicholls",
+            "description": ""
+          },
+          {
+            "source": "Auriga International Limited",
+            "target": "Simeon Metternich",
+            "description": ""
+          },
+          {
+            "source": "Fairfield Greenwich Group",
+            "target": "Simeon Metternich",
+            "description": ""
+          },
+          {
+            "source": "Sean Flanagan",
+            "target": "Simeon Metternich",
+            "description": ""
+          },
+          {
+            "source": "Citigroup Global Markets, Inc.",
+            "target": "Mark Overley",
+            "description": ""
+          },
+          {
+            "source": "Citigroup Global Markets, Inc.",
+            "target": "Rajiv Sennar",
+            "description": ""
+          },
+          {
+            "source": "Tremont Partners",
+            "target": "Rajiv Sennar",
+            "description": "Corresponded with Tremont re Proposed Tremont Deal.  Raised BLMIS fraud concerns and received copies of BLMIS auditors' reports."
+          },
+          {
+            "source": "Citigroup Global Markets, Inc.",
+            "target": "Paul Fraynt",
+            "description": ""
+          },
+          {
+            "source": "Citigroup Global Markets, Inc.",
+            "target": "Samir Mathur",
+            "description": ""
+          },
+          {
+            "source": "Tremont Partners",
+            "target": "Samir Mathur",
+            "description": "Copied on emails re Proposed Tremont Deal and helped schedule meeting with Madoff"
+          },
+          {
+            "source": "Citigroup Global Markets, Inc.",
+            "target": "Tie Wei",
+            "description": "reported to Mathur, who was CGMI"
+          },
+          {
+            "source": "Rajiv Sennar",
+            "target": "Samir Mathur",
+            "description": "Led DD on Sentry together"
+          },
+          {
+            "source": "Erwin Parviz",
+            "target": "Tie Wei",
+            "description": "April 2005 emails on Sentry deal"
+          },
+          {
+            "source": "Citigroup Global Markets Limited",
+            "target": "Stephen Hsu",
+            "description": ""
+          },
+          {
+            "source": "Joanne McCourt",
+            "target": "Stephen Hsu",
+            "description": ""
+          },
+          {
+            "source": "Tremont Partners",
+            "target": "Paul Donlin",
+            "description": "Business Manager for Prime Fund Credit Deal.  Submitted the May 2005 Memo"
+          },
+          {
+            "source": "Citigroup Global Markets, Inc.",
+            "target": "Marc Adelman",
+            "description": ""
+          },
+          {
+            "source": "Tremont Partners",
+            "target": "Marc Adelman",
+            "description": "Business Sponsor for Prime Fund Credit Deal. Corresponded with Tremontl, including re Oppenheimer requirement and talks for deal's renewal"
+          },
+          {
+            "source": "Tremont Partners",
+            "target": "Bruce Clark",
+            "description": "Business Sponsor for Prime Fund Credit Deal"
+          },
+          {
+            "source": "Citigroup Global Markets, Inc.",
+            "target": "Thomas Fontana",
+            "description": ""
+          },
+          {
+            "source": "Bruce Clark",
+            "target": "Thomas Fontana",
+            "description": "Met Madoff together"
+          },
+          {
+            "source": "Matthew Nicholls",
+            "target": "Thomas Fontana",
+            "description": "Met Madoff together"
+          },
+          {
+            "source": "Marc Adelman",
+            "target": "Thomas Fontana",
+            "description": ""
+          },
+          {
+            "source": "Tremont Partners",
+            "target": "Thomas Fontana",
+            "description": "Portfolio Manager for Prime Fund Credit Deal"
+          },
+          {
+            "source": "Tremont Partners",
+            "target": "Matthew Nicholls",
+            "description": "Client Coverage Banker for Prime Fund Credit Deal & informed Tremont that Citi would not proceed with Proposed Tremont Deal."
+          },
+          {
+            "source": "Citigroup Global Markets, Inc.",
+            "target": "Howard Kluger",
+            "description": ""
+          },
+          {
+            "source": "Tremont Partners",
+            "target": "Howard Kluger",
+            "description": "Negotiated procedures for and received copy of KPMG report from Tremont (April 2006)"
+          },
+          {
+            "source": "Tremont Partners",
+            "target": "Debbie Ng",
+            "description": "Received KPMG report from Tremont.  Attended meeting with Tremont re Prime Fund Credit Deal renewal (November 2006)"
+          },
+          {
+            "source": "Citigroup Global Markets, Inc.",
+            "target": "Joseph Elmlinger",
+            "description": ""
+          },
+          {
+            "source": "Citigroup Global Markets, Inc.",
+            "target": "Leon Gross",
+            "description": "per complaint"
+          },
+          {
+            "source": "Citigroup Global Markets, Inc.",
+            "target": "Amir Heravi",
+            "description": ""
+          },
+          {
+            "source": "Citigroup Global Markets, Inc.",
+            "target": "Roy Baladi",
+            "description": ""
+          },
+          {
+            "source": "Citigroup Global Markets, Inc.",
+            "target": "Ryan Gould",
+            "description": ""
+          },
+          {
+            "source": "Citigroup Global Markets, Inc.",
+            "target": "Andrew Wolchek",
+            "description": ""
+          },
+          {
+            "source": "Citigroup Global Markets Limited",
+            "target": "Pierre-Henri Denain",
+            "description": "Fixed Income & Head of Citi Global Markets in France (Paris)"
+          },
+          {
+            "source": "John B. Yu",
+            "target": "Faraz Naseer",
+            "description": ""
+          },
+          {
+            "source": "Adam Albin",
+            "target": "Faraz Naseer",
+            "description": ""
+          },
+          {
+            "source": "Tremont Partners",
+            "target": "Michael Robertson",
+            "description": "Informed Tremont that Citi would not proceed with Proposed Tremont Deal."
+          },
+          {
+            "source": "Citigroup Global Markets, Inc.",
+            "target": "Brian Leach",
+            "description": "Risk, Strategy, Audit and Compliance"
+          },
+          {
+            "source": "Brian Leach",
+            "target": "Ramesh Gupta",
+            "description": ""
+          },
+          {
+            "source": "Brian Leach",
+            "target": "Adam Albin",
+            "description": ""
+          },
+          {
+            "source": "Ramesh Gupta",
+            "target": "Samir Mathur",
+            "description": ""
+          },
+          {
+            "source": "Citigroup Global Markets, Inc.",
+            "target": "Fiona Hill-Samuel",
+            "description": ""
+          },
+          {
+            "source": "Tremont Partners",
+            "target": "Steven Penny",
+            "description": "Advised re selection of risk rating model for Prime Fund Credit Deal"
+          },
+          {
+            "source": "Citigroup Global Markets, Inc.",
+            "target": "George Livadas",
+            "description": ""
+          },
+          {
+            "source": "Marc Adelman",
+            "target": "Bruce Clark",
+            "description": ""
+          },
+          {
+            "source": "Marc Adelman",
+            "target": "Matthew Nicholls",
+            "description": ""
+          },
+          {
+            "source": "Tremont Partners",
+            "target": "George Livadas",
+            "description": "Copied on emails re Prime Fund Credit Deal (May-June 2005) and received weekly reports on BLMIS puts and calls"
+          },
+          {
+            "source": "Adam Albin",
+            "target": "John B. Yu",
+            "description": "April 2007 email correspondence"
+          },
+          {
+            "source": "Tremont Partners",
+            "target": "Susan Olsen",
+            "description": "Spoke to Tremont re Prime Fund Credit Deal termination agreement (March 2008)"
+          },
+          {
+            "source": "Peter Fischer",
+            "target": "Sean Flanagan",
+            "description": ""
+          },
+          {
+            "source": "Peter Fischer",
+            "target": "Simeon Metternich",
+            "description": ""
+          },
+          {
+            "source": "Samir Mathur",
+            "target": "Zara Stutts",
+            "description": "Sept 2006 correspondence"
+          },
+          {
+            "source": "Adam Albin",
+            "target": "Zara Stutts",
+            "description": "Sept 2006 correspondence"
+          },
+          {
+            "source": "John B. Yu",
+            "target": "Zara Stutts",
+            "description": "Sept 2006 correspondence"
+          },
+          {
+            "source": "Vishal Mishra",
+            "target": "Zara Stutts",
+            "description": "Sept 2006 correspondence"
+          },
+          {
+            "source": "Simeon Metternich",
+            "target": "Zara Stutts",
+            "description": ""
+          },
+          {
+            "source": "Tremont Partners",
+            "target": "Gene Fauquier",
+            "description": "Copied on emails re draft agreements for Prime Fund Credit Deal (September 2006)"
+          },
+          {
+            "source": "Tremont Partners",
+            "target": "Stephen Boras",
+            "description": "Advised re selection of risk rating model for Prime Fund Credit Deal"
+          },
+          {
+            "source": "Citigroup Global Markets, Inc.",
+            "target": "Holly Robinson",
+            "description": "MD, Equity Derivative Sales"
+          },
+          {
+            "source": "Leon Gross",
+            "target": "Holly Robinson",
+            "description": ""
+          },
+          {
+            "source": "Tremont Partners",
+            "target": "Tom Sullivan",
+            "description": "Emailed Tremont with Citigroup's 'audit scope' for KPMG to audit Prime Fund (January 2006)"
+          },
+          {
+            "source": "Howard Kluger",
+            "target": "Tom Sullivan",
+            "description": ""
+          },
+          {
+            "source": "Citigroup Global Markets, Inc.",
+            "target": "Jean Louis Lafforgue",
+            "description": ""
+          },
+          {
+            "source": "Adam Albin",
+            "target": "Paul Reed",
+            "description": "Received quarterly Hybrid Desk investment reports (2006-2007)"
+          },
+          {
+            "source": "Adam Albin",
+            "target": "Hugh Conroy",
+            "description": "Received quarterly Hybrid Desk investment reports (2006-2007)"
+          },
+          {
+            "source": "Adam Albin",
+            "target": "Alistair Webster",
+            "description": "Received quarterly Hybrid Desk investment reports (2006-2007)"
+          },
+          {
+            "source": "Adam Albin",
+            "target": "Dominic Wallace",
+            "description": "Received quarterly Hybrid Desk investment reports (2006-2007)"
+          },
+          {
+            "source": "Adam Albin",
+            "target": "Susan Grbic",
+            "description": "Received quarterly Hybrid Desk investment reports (2006-2007)"
+          },
+          {
+            "source": "Adam Albin",
+            "target": "Steven Henger",
+            "description": "Received quarterly Hybrid Desk investment reports (2006-2007)"
+          },
+          {
+            "source": "Adam Albin",
+            "target": "Rachel Short",
+            "description": "Received quarterly Hybrid Desk investment reports (2006-2007)"
+          },
+          {
+            "source": "Adam Albin",
+            "target": "Jean Louis Lafforgue",
+            "description": "Received quarterly Hybrid Desk investment reports (2006-2007)"
+          },
+          {
+            "source": "Adam Albin",
+            "target": "Julie Wan",
+            "description": "Received quarterly Hybrid Desk investment reports (2006-2007)"
+          },
+          {
+            "source": "Adam Albin",
+            "target": "David Arnold",
+            "description": "Received quarterly Hybrid Desk investment reports (2006-2007)"
+          },
+          {
+            "source": "Erwin Parviz",
+            "target": "Marc Fisher",
+            "description": ""
+          },
+          {
+            "source": "Erwin Parviz",
+            "target": "Ramesh Gupta",
+            "description": ""
+          },
+          {
+            "source": "Erwin Parviz",
+            "target": "Samir Mathur",
+            "description": ""
+          },
+          {
+            "source": "Sean Flanagan",
+            "target": "Pierre-Henri Denain",
+            "description": "Corresponded re a 'KBC facility for Edison' that involved Harley, another Madoff feeder fund (March 2005)"
+          },
+          {
+            "source": "James Wathan",
+            "target": "Pierre-Henri Denain",
+            "description": "Corresponded re a 'KBC facility for Edison' that involved Harley, another Madoff feeder fund (March 2005)"
+          },
+          {
+            "source": "Marc Fisher",
+            "target": "Pierre-Henri Denain",
+            "description": "Corresponded re a 'KBC facility for Edison' that involved Harley, another Madoff feeder fund (March 2005)"
+          },
+          {
+            "source": "Matthew Nicholls",
+            "target": "Samir Mathur",
+            "description": ""
+          },
+          {
+            "source": "Joseph Elmlinger",
+            "target": "Samir Mathur",
+            "description": ""
+          },
+          {
+            "source": "Samir Mathur",
+            "target": "Pierre-Henri Denain",
+            "description": "Corresponded re a 'KBC facility for Edison' that involved Harley, another Madoff feeder fund (March 2005)"
+          },
+          {
+            "source": "Vishal Mishra",
+            "target": "Pierre-Henri Denain",
+            "description": "Corresponded re a 'KBC facility for Edison' that involved Harley, another Madoff feeder fund (March 2005)"
+          },
+          {
+            "source": "James Wathan",
+            "target": "Sean Flanagan",
+            "description": "Corresponded re a 'KBC facility for Edison' that involved Harley, another Madoff feeder fund (March 2005)"
+          },
+          {
+            "source": "Marc Fisher",
+            "target": "Sean Flanagan",
+            "description": "Corresponded re a 'KBC facility for Edison' that involved Harley, another Madoff feeder fund (March 2005)"
+          },
+          {
+            "source": "Samir Mathur",
+            "target": "Vishal Mishra",
+            "description": ""
+          },
+          {
+            "source": "Samir Mathur",
+            "target": "Sean Flanagan",
+            "description": "Corresponded re a 'KBC facility for Edison' that involved Harley, another Madoff feeder fund (March 2005)"
+          },
+          {
+            "source": "Vishal Mishra",
+            "target": "Sean Flanagan",
+            "description": "Corresponded re a 'KBC facility for Edison' that involved Harley, another Madoff feeder fund (March 2005)"
+          },
+          {
+            "source": "Marc Fisher",
+            "target": "James Wathan",
+            "description": "Corresponded re a 'KBC facility for Edison' that involved Harley, another Madoff feeder fund (March 2005)"
+          },
+          {
+            "source": "Samir Mathur",
+            "target": "James Wathan",
+            "description": "Corresponded re a 'KBC facility for Edison' that involved Harley, another Madoff feeder fund (March 2005)"
+          },
+          {
+            "source": "Vishal Mishra",
+            "target": "James Wathan",
+            "description": "Corresponded re a 'KBC facility for Edison' that involved Harley, another Madoff feeder fund (March 2005)"
+          },
+          {
+            "source": "Samir Mathur",
+            "target": "Marc Fisher",
+            "description": "Corresponded re a 'KBC facility for Edison' that involved Harley, another Madoff feeder fund (March 2005)"
+          },
+          {
+            "source": "Vishal Mishra",
+            "target": "Marc Fisher",
+            "description": "Corresponded re a 'KBC facility for Edison' that involved Harley, another Madoff feeder fund (March 2005)"
+          },
+          {
+            "source": "Gavin Rankin",
+            "target": "Marc Fisher",
+            "description": "Met with FGG together in Sept 2004"
+          },
+          {
+            "source": "Neville Quie",
+            "target": "Marc Fisher",
+            "description": "Met with FGG together in Sept 2004"
+          },
+          {
+            "source": "Ramesh Gupta",
+            "target": "Marc Fisher",
+            "description": "Visited FGG NY office together (March 2005)"
+          },
+          {
+            "source": "Debbie Ng",
+            "target": "Howard Kluger",
+            "description": "both emailed with Tremont on Prime Fund Audit"
+          },
+          {
+            "source": "Bruce Clark",
+            "target": "Matthew Nicholls",
+            "description": "Met Madoff together"
+          },
+          {
+            "source": "Matthew Nicholls",
+            "target": "Rajiv Sennar",
+            "description": ""
+          },
+          {
+            "source": "Sean Flanagan",
+            "target": "Paul Fraynt",
+            "description": "Email correspondence on Alpha Prime with Joanne McCourt and others"
+          },
+          {
+            "source": "Joanne McCourt",
+            "target": "Paul Fraynt",
+            "description": "Email correspondence on Alpha Prime with Joanne McCourt and others"
+          },
+          {
+            "source": "Vishal Mishra",
+            "target": "Paul Fraynt",
+            "description": "Email correspondence on Alpha Prime with Joanne McCourt and others"
+          },
+          {
+            "source": "Zhenyu ('Harry') Peng",
+            "target": "Paul Fraynt",
+            "description": "Email correspondence on Alpha Prime with Joanne McCourt and others"
+          },
+          {
+            "source": "Ryan Gould",
+            "target": "Rajiv Sennar",
+            "description": ""
+          },
+          {
+            "source": "Vishal Mishra",
+            "target": "Rajiv Sennar",
+            "description": ""
+          },
+          {
+            "source": "Vishal Mishra",
+            "target": "Tie Wei",
+            "description": "Both names in Sentry notices"
+          },
+          {
+            "source": "Vishal Mishra",
+            "target": "Ryan Gould",
+            "description": ""
+          },
+          {
+            "source": "Vishal Mishra",
+            "target": "Ramesh Gupta",
+            "description": ""
+          },
+          {
+            "source": "Vishal Mishra",
+            "target": "Zhenyu ('Harry') Peng",
+            "description": ""
+          },
+          {
+            "source": "Vishal Mishra",
+            "target": "Alpha Prime",
+            "description": "Involved in DD and advised against the switch"
+          },
+          {
+            "source": "Vishal Mishra",
+            "target": "Senator",
+            "description": "Involved in DD and advised against the switch"
+          },
+          {
+            "source": "Joseph Elmlinger",
+            "target": "Richard Burns",
+            "description": "cowrote equity derivatives guide together"
+          },
+          {
+            "source": "Joseph Elmlinger",
+            "target": "Elena Matrullo",
+            "description": "Scheduled to attend cancelled meeting with Madoff together (April 2006)"
+          },
+          {
+            "source": "Joseph Elmlinger",
+            "target": "Ramesh Gupta",
+            "description": "Scheduled to attend cancelled meeting with Madoff together (April 2006)"
+          },
+          {
+            "source": "Sean Flanagan",
+            "target": "Alpha Prime",
+            "description": ""
+          },
+          {
+            "source": "Sean Flanagan",
+            "target": "Senator",
+            "description": ""
+          },
+          {
+            "source": "Sean Flanagan",
+            "target": "Joanne McCourt",
+            "description": ""
+          },
+          {
+            "source": "Citigroup Global Markets Limited",
+            "target": "Sean Flanagan",
+            "description": ""
+          },
+          {
+            "source": "Citigroup Global Markets, Inc.",
+            "target": "Ramesh Gupta",
+            "description": ""
+          },
+          {
+            "source": "Richard Burns",
+            "target": "Ramesh Gupta",
+            "description": "Scheduled to attend cancelled meeting with Madoff together (April 2006)"
+          },
+          {
+            "source": "Elena Matrullo",
+            "target": "Ramesh Gupta",
+            "description": "Scheduled to attend cancelled meeting with Madoff together (April 2006)"
+          },
+          {
+            "source": "Adam Albin",
+            "target": "Ramesh Gupta",
+            "description": ""
+          },
+          {
+            "source": "Citigroup Global Markets, Inc.",
+            "target": "Steven Penny",
+            "description": ""
+          },
+          {
+            "source": "Erwin Parviz",
+            "target": "Steven Penny",
+            "description": ""
+          },
+          {
+            "source": "Adam Albin",
+            "target": "Steven Penny",
+            "description": ""
+          },
+          {
+            "source": "John B. Yu",
+            "target": "Sean Flanagan",
+            "description": ""
+          },
+          {
+            "source": "Zhenyu ('Harry') Peng",
+            "target": "John B. Yu",
+            "description": ""
+          },
+          {
+            "source": "Bruce Clark",
+            "target": "Debbie Ng",
+            "description": ""
+          },
+          {
+            "source": "Citigroup Global Markets, Inc.",
+            "target": "Bruce Clark",
+            "description": ""
+          },
+          {
+            "source": "Leon Gross",
+            "target": "Richard Burns",
+            "description": "cowrote equity derivatives guide together"
+          },
+          {
+            "source": "Richard Burns",
+            "target": "Elena Matrullo",
+            "description": "Scheduled to attend cancelled meeting with Madoff together (April 2006)"
+          },
+          {
+            "source": "Adam Albin",
+            "target": "Sean Flanagan",
+            "description": ""
+          },
+          {
+            "source": "Adam Albin",
+            "target": "Vishal Mishra",
+            "description": ""
+          },
+          {
+            "source": "Adam Albin",
+            "target": "Joanne McCourt",
+            "description": ""
+          },
+          {
+            "source": "Alpha Prime",
+            "target": "Joanne McCourt",
+            "description": ""
+          },
+          {
+            "source": "Senator",
+            "target": "Joanne McCourt",
+            "description": ""
+          },
+          {
+            "source": "Zhenyu ('Harry') Peng",
+            "target": "Joanne McCourt",
+            "description": ""
+          },
+          {
+            "source": "Citigroup Global Markets Limited",
+            "target": "Joanne McCourt",
+            "description": ""
+          },
+          {
+            "source": "Gavin Rankin",
+            "target": "Neville Quie",
+            "description": ""
+          },
+          {
+            "source": "Citigroup Global Markets, Inc.",
+            "target": "Paul Donlin",
+            "description": ""
+          },
+          {
+            "source": "Alternative Investments",
+            "target": "Ken McDonald",
+            "description": ""
+          }
        ]
 }
