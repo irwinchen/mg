@@ -2018,6 +2018,41 @@
             "source": "Frank Casey",
             "target": "Neil Chelo",
             "description": "Co-author of Markopolos' book, 'No One Would Listen: A True Financial Thiller'"
+          },
+          {
+            "source": "Bernard L. Madoff Investment Securities LLC",
+            "target": "Fairfield Greenwich Group",
+            "description": ""
+          },
+          {
+            "source": "Bernard L. Madoff Investment Securities LLC",
+            "target": "Alpha Prime",
+            "description": ""
+          },
+          {
+            "source": "Bernard L. Madoff Investment Securities LLC",
+            "target": "Senator",
+            "description": ""
+          },
+          {
+            "source": "Bernard L. Madoff Investment Securities LLC",
+            "target": "Tremont Partners",
+            "description": ""
+          },
+          {
+            "source": "Senator",
+            "target": "Alpha Prime",
+            "description": ""
+          },
+          {
+            "source": "Simeon Metternich",
+            "target": "Alpha Prime",
+            "description": ""
+          },
+          {
+            "source": "Simeon Metternich",
+            "target": "Senator",
+            "description": ""
           }
        ]
 }
