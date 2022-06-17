@@ -284,7 +284,7 @@
           "id": "Joanne McCourt",
           "type": "Person",
           "contact_type": "Key Contact",
-          "status": "Current",
+          "status": "Conflict",
           "proximity": 3,
           "description": "In 2008, McCourt was involved in conversations with Alpha Prime's Peter Fischer and the subsequent due diligence process to explore revising the Fairfield Sentry Leverage Deal by switching from Sentry to Alpha Prime and/or Senator. Between April and August 2008, she coordinated the due diligence process between Citigroup, Alpha Prime and Simeon Metternich, including scheduling a call between her, Zhenyu Peng, Sean Flanagan and Peter Fischer in July 2008, which she described as ‘an opportunity for Alpha structuring/trading to discuss any issues regarding requirements for risk reporting etc.’ Later, in an August 2008 internal Citigroup correspondence, McCourt asked internally whether Citigroup would proceed with the switch, to which Vishal Mishra replied, 'I will suggest saying no because Senator has low AUM. Can the client [Auriga] share some of the cost savings he is expecting to achieve via this change?' After leaving Citigroup, McCourt was named by her former colleagues on at least two occasions as someone who might be interested in Madoff exposure. On September 18, 2008, Flanagan emailed Stephen Hsu (then at Deutsche Bank), writing, 'We're needing to terminate our Madoff trade. Do you have appetite for that risk over there?' Hsu return emailed, 'sorry, we wont be able to help as madoff is not a name the bank is keen on. might try jojo [Joanne McCourt] though, it could be her first ticket.'  Later, in a November 2008 email correspondence with Metternich, Sean Flanagan named McCourt (then at BNP Paribas) as someone whom Metternich could contact regarding a deal offering exposure to Madoff."
         },
@@ -373,7 +373,7 @@
           "type": "Person",
           "contact_type": "Key Contact",
           "status": "Former",
-          "proximity": 4,
+          "proximity": 3,
           "description": "Leach joined Citigroup in February 2008 as Chief Risk Officer and Acting Chief Risk Officer for the Institutional Clients Group. In or around July 2008, he participated in a meeting that involved reviewing due diligence reports on 'single manager deals,' which may have included the Fairfield Sentry Leverage Deal, according to an internal Citigroup email correspondence between Ramesh Gupta and Adam Albin, with Samir Mathur copied. According to information you provided, at some point in 2008, Leach spoke to Mathur via phone and instructed him to terminate the Fairfield Sentry Leverage Deal. "
         },
         {
@@ -421,7 +421,7 @@
           "type": "Person",
           "contact_type": "Key Contact",
           "status": "Former",
-          "proximity": 4,
+          "proximity": 3,
           "description": "Matter indicated that Lafforgue was one of Citigroup’s ‘market risk people’ concerned with identifying BLMIS’ counterparties. In June 2006, September 2006 and January 2007, Lafforgue was sent reports detailing Citigroup Global Markets' Hybrid Desk's holdings in various funds (which may have included Sentry). In the emails, Parviz and Albin indicated that Lafforgue's role related to ‘market risk’ (along with Ramesh Gupta, Dominic Williams and Paolo Mammola), but did not specify further. In April and August 2006, Lafforgue emailed Citigroup's Leah Burnett asking them to update a report detailing all of Citigroup's ‘strategy allocations for all Fund of Fund deals where a Worst Case Loss is calculated.’ "
         },
         {
@@ -429,7 +429,7 @@
           "type": "Person",
           "contact_type": "Key Contact",
           "status": "Current",
-          "proximity": 4,
+          "proximity": 3,
           "description": "Olsen was involved in discussions related to the termination of the Prime Fund Credit Deal. In March 2008, Peter Rahaghi of Seward & Kissel LLP emailed several employees of Citigroup and Tremont with a draft termination agreement. In an internal reply to Tremont and Orrick Herrington & Sutcliffe LLP, Tremont's Patrick Kelly wrote: 'FYI I communicated to Susan Olsen at Citigroup that the termination agreement drafted by S&K is completely unacceptable.'"
         },
         {
@@ -445,7 +445,7 @@
           "type": "Person",
           "contact_type": "Key Contact",
           "status": "Current",
-          "proximity": 4,
+          "proximity": 3,
           "description": "In 2008, Peng was involved in the due diligence on Alpha Prime and Senator, related to Auriga’s proposal to switch its underlying Madoff exposure in the Fairfield Sentry Leverage Deal from Sentry to Alpha Prime and/or Senator. In April 2008, Joanne McCourt copied Peng on internal Citigroup correspondences on the proposal, and in a reply, Vishal Mishra requested that he and Peng be included on any upcoming due diligence calls with Alpha Prime. Later, in July 2008, he was copied on emails between McCourt and Alpha Prime and participated in a phone call with Peter Fischer. Following Citigroup’s decision to terminate the deal with Auriga entirely, Peng approved a request to reduce redeem $40 million from Sentry, and in December 2008, he was copied on Citigroup’s emails to FGG, confirming a $10 million redemption, which was revised to a full redemption request on December 11, 2008."
         },
         {
@@ -493,7 +493,7 @@
           "type": "Person",
           "contact_type": "Key Contact",
           "status": "Other",
-          "proximity": 4,
+          "proximity": 3,
           "description": "Metternich served as an ‘introducing broker’ connecting Citigroup and Auriga International Limited for the Fairfield Sentry Leverage Deal. He was subsequently copied on email correspondences between Citigroup and FGG regarding due diligence for the deal. He operated through Argyle Investment Advisors in connection with the deal, according to an August 2018 email sent by Sean Flanagan. In September 2008, Metternich again acted as an intermediary between Citigroup and Auriga regarding the latter's decision to reduce the investment in Sentry by $40 million. That same month, Sean Flanagan emailed Metternich with suggestions for alternative financial institutions that might be open to more BLMIS exposure, including Joanne McCourt (then at BNP Paribas). In October 2008, Metternich emailed John Yu regarding a planned redemption of Auriga's investment in Sentry, and explained that Auriga planned to redeem $40 million, half of which would go to Citi."
         },
         {
@@ -517,7 +517,7 @@
           "type": "Person",
           "contact_type": "Key Contact",
           "status": "Other",
-          "proximity": 4,
+          "proximity": 3,
           "description": "As you know, Fischer was a director at Alpha Prime. Starting in April 2008, he corresponded and spoke with several Citigroup employees (including Joanne McCourt, Sean Flanagan and Zhenyu Peng) as part of the due diligence process for proposed changes to the Fairfield Sentry Leverage Deal. "
         },
         {
@@ -533,7 +533,7 @@
           "type": "Person",
           "contact_type": "Identified by MG",
           "status": "Former",
-          "proximity": 4,
+          "proximity": 3,
           "description": "Between at least June 2005 and March 2008, Sullivan was copied on weekly reports for American Masters Broad Market Prime Fund, L.P. In May 2006, Sullivan emailed Tremont's Darren Johnston and included the ‘audit scope’ that KPMG was to follow for their audit of the American Masters Broad Market Prime Fund. The audit was required under the terms of the Prime Fund Credit Deal for the purpose of valuing Prime Fund' s assets (which were pledged as collateral to Citigroup for the revolving credit facility) and resulted in the KPMG Independent Accountants' Report dated April 17, 2006 . The KPMG report compared the prices and noted discrepancies that BLMIS reported for its purported index option trades versus prices reported by two independent sources."
         },
         {
@@ -589,7 +589,7 @@
           "type": "Person",
           "contact_type": "Identified by MG",
           "status": "Former",
-          "proximity": 5,
+          "proximity": 3,
           "description": "In or around July 2003, Biase and Cliff de Souza (both of Citibank Alternative Investment Mangers) were in talks with FGG regarding its 'FFTW DAF and Redstone' funds, according to internal FGG email correspondences. In the emails, FGG’s Cristina Morales wrote that an employee of Citigroup Private Bank informed her that 'funds that Citigroup sells are filtered and studied by Citibank Alternative Investment Managers,' and that the employee would check with that team regarding FGG funds. Later, in June 2004, Biase was again involved in discussions with FGG, this time its 'Paradigm Fund,' according to internal FGG emails, in which FGG’s John Wartman wrote that Biase 'had reservations' after their second meeting. FGG’s Philip Toub wrote back, 'Just spoke to Dave Biase, don’t think he will veto their decision and it sounded like we should be in line for a 5- 10 million allocation.' The next year, in March 2005, FGG discussed internally whether to propose 'a nice slug of Bernie to Dave Biase.'"
         },
         {
@@ -597,7 +597,7 @@
           "type": "Person",
           "contact_type": "Identified by MG",
           "status": "Former",
-          "proximity": 5,
+          "proximity": 4,
           "description": "Gould reported directly to Leon Gross. In March 2006, Gould was copied (along with Samir Mathur and Rajiv Sennar) on an email correspondence between Citi's Vishal Mishra and FGG's Vijayvergiya, in which Mishra questioned apparent discrepancies between the prices that BLMIS reported to Sentry for its purported options transactions and the prices reported by Bloomberg."
         },
         {
@@ -671,6 +671,21 @@
           "status": "Other",
           "proximity": 6,
           "description": "Ocrant covered the hedge fund industry for MARHedge and was recruited by Frank Casey to help the Markopolos team.  As you know, he published a May 2001 article in MARHedge skeptical of Madoff’s returns. "
+        },
+        {
+          "id": "Cliff de Souza",
+          "type": "Person",
+          "contact_type": "Proposed by MG",
+          "status": "Former",
+          "proximity": 3,
+          "description": "In July 2003, FGG's Cristina Morales emailed her colleagues summarizing a meeting FGG's Carlos Garcia-Ordonez had with Citigroup Private Bank in Miami.  At the meeting, Citigroup Managing Director-Regional Head Latin America & Europe, Frances Aldrich Sevilla-Sacasa, told Carlos: 'Funds that Citigroup sells are filtered and studied by Citibank Alternatives Investment Managers, (with whom Santiago Reyes is in conversations with Dave Biase and Cliff de Souza).  This team in NY gives the approval for Citigroup's FoF, and then Private Banking needs to give approval for distribution.  Ms. Aldrich, interested in FGG funds, has agreed to support the funds by looking into the advanced with NY Alternative Investment Managers, and the possibilities of distribution. A follow through will be made directly with Mr. Marcelo Coscarelli, for he shall be notified of contacts Dave Biase and Cliff de Souza and their introduction to FFTW DAF and Redstone, which they are currently reviewing thanks to Santiago Reyes.'"
+        },{
+          "id": "Dean Barr",
+          "type": "Person",
+          "contact_type": "Proposed by MG",
+          "status": "Former",
+          "proximity": 6,
+          "description": "Between November 2005 and August 2007, Barr served as head of liquid alternative investments of Citigroup Alternative Investments, according to news articles, which stated that he joined the firm to build up its hedge fund business. More recently, Barr has been involved in litigation with Joseph Elmlinger:  In 2017, Barr (then a partner at Foundation Capital Partners LLC) sued Elmlinger (where he worked at the time) and several other individuals and entities in state court in Connecticut.  Barr alleged that the defendants conspired to “take over” Foundation and defame him, including by filing a false and “malicious” report named “Project Soothsayer” about him as an exhibit in a separate federal case.  “Project Soothsayer” reportedly alleged that Barr had a “functional inability to tell the truth,” misused corporate funds, had no fundraising skills and could not maintain confidentiality.  Barr alleged that Elmlinger was “a co-author of ‘Project Soothsayer,’” or an “accomplice to creating the dossier.”  In June 2018, Barr withdrew his claims against Elmlinger.  The case is active."
         }
        ],
        "links":[
@@ -2052,6 +2067,36 @@
           {
             "source": "Simeon Metternich",
             "target": "Senator",
+            "description": ""
+          },
+          {
+            "source": "Alternative Investments",
+            "target": "Cliff de Souza",
+            "description": ""
+          },
+          {
+            "source": "Cliff de Souza",
+            "target": "David Biase",
+            "description": ""
+          },
+          {
+            "source": "Cliff de Souza",
+            "target": "Fairfield Greenwich Group",
+            "description": ""
+          },
+          {
+            "source": "Alternative Investments",
+            "target": "Dean Barr",
+            "description": ""
+          },
+          {
+            "source": "Dean Barr",
+            "target": "Joseph Elmlinger",
+            "description": ""
+          },
+          {
+            "source": "Gavin Rankin",
+            "target": "Citigroup Global Markets Limited",
             "description": ""
           }
        ]
