@@ -19,7 +19,7 @@ var symbolScale =  d3.scaleOrdinal()
   .domain(["Person", "Entity", "Division", "Fund"])
   .range([ circle, square, cross, triangleU] );
 
-
+  var hilit = -1;
 
 let zoom = d3.zoom()
     .scaleExtent([.5,2])
@@ -28,6 +28,7 @@ let zoom = d3.zoom()
 var svg = d3.select("svg"),
 width = +svg.attr("width"),
 height = +svg.attr("height");
+
 
 var title = svg
     .append("text")
@@ -63,6 +64,7 @@ var atty = d3.select(".box").append("text")
     .attr("fill", "red")
     .text("ATTORNEY WORK PRODUCT");
 
+    
 // d3.json("newdata.json").then(function(graph) {
 d3.json("data_jun7.json").then(function(graph) {
     // if (error) throw error;
@@ -86,6 +88,25 @@ d3.json("data_jun7.json").then(function(graph) {
     .selectAll("g")
     .data(graph.nodes)
     .enter().append("g");
+    
+    var resetBtnBox = svg
+    .append("rect")
+    .attr("width", 60)
+    .attr("height", 20)
+    .attr("class", "resetbtn")
+    .attr("x", 0 - (width/3)-60)
+    .attr("y", 0 - (height/3)+45)
+    .attr("rx", 12)
+    .attr("fill", "#ccc")
+    .attr("cursor", "pointer")
+    .on("click", reset);
+
+    var resetBtn = svg
+    .append("text")
+    .attr("x", 0 - (width/3)-47)
+    .attr("y", 0 - (height/3)+59)
+    .text("RESET")
+    .on("click", reset);
 
     var shapes = node.append("g")
         .append("path")
@@ -112,9 +133,9 @@ d3.json("data_jun7.json").then(function(graph) {
                 return "none";
             }
         });
-
-    node.on("mouseover", mouseOver(.1))
-        .on("mouseout", mouseOut);
+    
+    node.on("click", showLinks(.1));
+    node.on("dblclick", resetLinks);
 
 
     var simulation = d3.forceSimulation(graph.nodes)
@@ -146,19 +167,19 @@ d3.json("data_jun7.json").then(function(graph) {
     function isConnected(a, b) {
         return linkedByIndex[a.index + "," + b.index] || linkedByIndex[b.index + "," + a.index] || a.index == b.index;
     }
-
-    // fade nodes on hover
-    function mouseOver(opacity) {
+    
+    // fade nodes and leave connected nodes 
+    function showLinks(opacity) {
         return function(d, i) {
             // check all other nodes to see if they're connected
             // to this one. if so, keep the opacity at 1, otherwise
             // fade
-            
             node.style("stroke-opacity", function(o) {
                 thisOpacity = isConnected(i, o) ? 1 : opacity;
                 return thisOpacity;
             });
             node.style("fill-opacity", function(o){
+                console.log(i, o);
                 thisOpacity = isConnected(i, o) ? 1 : opacity;
                 return thisOpacity;
             })
@@ -169,17 +190,22 @@ d3.json("data_jun7.json").then(function(graph) {
         };
     }
 
-    function mouseOut() {
+    function resetLinks() {
         node.style("stroke-opacity", 1);
         node.style("fill-opacity", 1);
         link.style("stroke-opacity", 1);
         link.style("stroke", "#333");
+        initZoom();
     }
-
+    
+    function reset() {
+        resetLinks();
+        initZoom();
+    }
     tippy('[data-tippy-content]', {
     allowHTML: true,
-    hideOnClick: 'true',
-    trigger: 'click'
+    hideOnClick: 'false',
+    trigger: 'mouseenter'
 });
 
 // Draw Symbol Legend

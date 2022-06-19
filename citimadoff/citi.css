@@ -12,3 +12,6 @@ line {
   .legendSymbol path {
   fill: #999;
 }
+.resetbtn {
+  cursor:pointer;
+}
