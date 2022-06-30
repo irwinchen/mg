@@ -204,7 +204,7 @@
           "id": "Steven Penny",
           "type": "Person",
           "contact_type": "Key Contact",
-          "status": "Former",
+          "status": "Other",
           "proximity": 3,
           "description": "Penny was a senior officer within Citigroup's Global Credit Center, which participated in the approval process of new transactions. The GCC acted as a 'middle-office' due-diligence group that served a pure risk control function. In this capacity, he was named in the appendix of a May 2005 Citigroup internal Transaction Memo regarding Prime Fund Credit Deal, which read: 'Further to discussions with both GCC hedge fund group (Steve Penny) and Risk Architecture's Risk Ratings unit (Steve Boras) it was determined that we should use the approved Investment Advisor risk rating model...' "
         },
@@ -212,7 +212,7 @@
           "id": "John B. Yu",
           "type": "Person",
           "contact_type": "Key Contact",
-          "status": "Former",
+          "status": "Other",
           "proximity": 3,
           "description": "Between February 2007 and October 2008, Yu corresponded with FGG and Metternich about the Fairfield Sentry Leverage Deal. In February 2007, he indicated that Citigroup was considering changing leverage providers for the Fairfield Sentry Leverage Deal, and would potentially execute a ‘total return swap to get exposure to the fund returns.’ In May 2007, Yu was listed as a CGMI contact in a confirmation document for a transaction related to the Fairfield Sentry Leverage Deal. In October 2008, Yu corresponded with Metternich regarding a $40 million redemption from Sentry requested by Auriga (via Metternich). Yu communicated Citigroup's approval for the redemption after confirming with Zhenyu Peng, with Sean Flanagan copied)."
         },
@@ -580,7 +580,7 @@
           "id": "James McDade",
           "type": "Person",
           "contact_type": "Identified by MG",
-          "status": "Former",
+          "status": "Other",
           "proximity": 5,
           "description": "From October 1992 to September 2015, McDade was Director of Risk Management at Citigroup in New York, according to his LinkedIn profile, and he was FINRA registered with CGMI between 2003 and 2015, according to FINRA Broker Check."
         },
@@ -628,7 +628,7 @@
           "id": "Amir Heravi",
           "type": "Person",
           "contact_type": "Identified by MG",
-          "status": "Former",
+          "status": "Other",
           "proximity": 6,
           "description": "Heravi reported directly to Leon Gross. After speaking with Markopolos in 2005, Gross analyzed the SSC strategy and asked the index options desk and equity derivative salespeople at CGMI whether they were familiar with Madoff as a customer or counterparty."
         },
