@@ -1,9 +1,22 @@
+body {
+  font-family: adelle-sans,sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: adelle-sans,sans-serif;
+font-weight: 700;
+font-style: normal;
+}
 rect { cursor:pointer;}
 
   .tooltip {
     width: 200px;
     position:absolute;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: adelle-sans,sans-serif;
+font-weight: 400;
+font-style: normal;
     font-size: 11px;
     color:#fff;
     cursor: pointer;
