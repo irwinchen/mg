@@ -491,7 +491,7 @@ var graph = {
 var color = d3.scaleOrdinal(d3.schemeCategory10);
 var legendColor = d3.scaleOrdinal()
 .domain(["Individual", "org", "Local Org", "State Org", "National Org", "CPC"])
-.range(["#0076BA","#929292","#ff7f0e","#006C65", "#F27200", "#D41876"]);
+.range(["#0076BA","#929292","#ff7f0e","#006C65", "#FF42A1", "#B51700"]);
 
 var triangleU = d3.symbol().type(d3.symbolTriangle)(),
 circle = d3.symbol().type(d3.symbolCircle)(),
@@ -506,7 +506,7 @@ var symbolScale =  d3.scaleOrdinal()
 
 var pointScale = d3.scaleOrdinal()
   .domain(["Individual", "CPC", "org", "Local Org", "State Org", "National Org"])
-  .range(["#0076BA","#ff7f0e","#929292","#006C65", "#F27200", "#D41876"]);
+  .range(["#0076BA","#B51700","#929292","#006C65", "#F27200", "#FF42A1"]);
 
 
   var title = svg
@@ -661,6 +661,7 @@ node.on("dblclick", resetLinks);
             link.style("stroke-opacity", function(o) {
                 return o.source === i || o.target === i ? 1 : opacity;
             });
+            
         };
     }
 
@@ -695,31 +696,38 @@ tippy('[data-tippy-content]', {
 
 // Draw Symbol Legend
 svg.append("g")
-    .attr("class", "legendSymbol")
-    .attr("transform", "translate(-450,180)");
+    .attr("class", "legendSymbol");
+    // .attr("transform", "translate(-450,180)");
 
-var legendPath = d3.legendSymbol()
-.scale(symbolScale)
-.orient("vertical")
-.labelWrap(30)
-.shapePadding(4)
-.labelOffset(3)
-.title("LEGEND");
+svg.select('.legendSymbol')
+.append("rect")
+.attr('x', 40.65)
+.attr('y',599.47)
+.attr('width', 123)
+.attr('height', 156)
+.style('fill','#000000');
+// var legendPath = d3.legendSymbol()
+// .scale(symbolScale)
+// .orient("vertical")
+// .labelWrap(30)
+// .shapePadding(4)
+// .labelOffset(3)
+// .title("LEGEND");
 
-svg.select(".legendSymbol")
-  .call(legendPath);
+// svg.select(".legendSymbol")
+//   .call(legendPath);
 
-// Draw Color Legend
-svg.append("g")
-    .attr("class", "legendOrdinal")
-    .attr("transform", "translate(-444,255)");
+// // Draw Color Legend
+// svg.append("g")
+//     .attr("class", "legendOrdinal")
+//     .attr("transform", "translate(-444,255)");
 
-var legendOrdinal = d3.legendColor()
-    .shape("path", d3.symbol().type(d3.symbolCircle).size(80)())
-    .scale(legendColor);
+// var legendOrdinal = d3.legendColor()
+//     .shape("path", d3.symbol().type(d3.symbolCircle).size(80)())
+//     .scale(legendColor);
 
-svg.select(".legendOrdinal")
-    .call(legendOrdinal);
+// svg.select(".legendOrdinal")
+//     .call(legendOrdinal);
 
 function ticked() {
     link
