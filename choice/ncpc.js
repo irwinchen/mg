@@ -581,6 +581,97 @@ var node = d3.select("svg g")
 .data(graph.nodes)
 .enter().append("g");
 
+var legend = svg
+.append('g')
+.attr('class', 'legend')
+.attr('transform', 'translate(300, -240)');
+// Legend box
+svg.select('.legend')
+    .append("rect")
+    .attr('width', 123)
+    .attr('height', 140)
+    .style('fill','#FCF3C8');
+
+// Individual
+svg.select('.legend')
+    .append('circle')
+    .attr('cx', 20)
+    .attr('cy', 39)
+    .attr('r', 5)
+    .style('fill', '#0076ba');
+
+// Organization
+svg.select('.legend')
+    .append('rect')
+    .attr('width', 12)
+    .attr('height', 12)
+    .attr('x', 13)
+    .attr('y', 50)
+    .style('fill', '#929292');
+
+// Local Organization
+svg.select('.legend')
+    .append('rect')
+    .attr('width', 12)
+    .attr('height', 12)
+    .attr('x', 13)
+    .attr('y', 70)
+    .style('fill', '#006c65');
+
+// State Organization
+svg.select('.legend')
+    .append('rect')
+    .attr('width', 12)
+    .attr('height', 12)
+    .attr('x', 13)
+    .attr('y', 90)
+    .style('fill', '#f27200');
+
+// National Organization
+svg.select('.legend')
+    .append('rect')
+    .attr('width', 12)
+    .attr('height', 12)
+    .attr('x', 13)
+    .attr('y', 110)
+    .style('fill', '#ff42a1');
+
+svg.select('.legend')
+    .append('text')
+    .attr('class', 'legendtext')
+    .attr('x', 30)
+    .attr('y', 22)
+    .text('LEGEND');
+svg.select('.legend')
+    .append('text')
+    .attr('class', 'legendtext')
+    .attr('x', 30)
+    .attr('y', 42)
+    .text('Individual');
+svg.select('.legend')
+    .append('text')
+    .attr('class', 'legendtext')
+    .attr('x', 30)
+    .attr('y', 60)
+    .text('Organization');
+svg.select('.legend')
+    .append('text')
+    .attr('class', 'legendtext')
+    .attr('x', 30)
+    .attr('y', 80)
+    .text('Local Organization');
+svg.select('.legend')
+    .append('text')
+    .attr('class', 'legendtext')
+    .attr('x', 30)
+    .attr('y', 100)
+    .text('State Organization');
+svg.select('.legend')
+    .append('text')
+    .attr('class', 'legendtext')
+    .attr('x', 30)
+    .attr('y', 120)
+    .text('National Organization');
 
 var resetBtnBox = svg
     .append("rect")
@@ -601,6 +692,8 @@ var resetBtnBox = svg
     .text("RESET")
     .on("click", reset);
 
+
+    
 var shapes = node.append("g")
         .append("path")
         .attr("fill", function(d) { return pointScale(d.type); })
@@ -661,7 +754,7 @@ node.on("dblclick", resetLinks);
             link.style("stroke-opacity", function(o) {
                 return o.source === i || o.target === i ? 1 : opacity;
             });
-            
+
         };
     }
 
@@ -676,6 +769,16 @@ node.on("dblclick", resetLinks);
         resetLinks();
         initZoom();
     }
+
+    // var dragHandler = d3.drag()
+    //         .on('drag', dragged);
+    // function dragged() {
+    //     var current = d3.select(this);
+    //     current
+    //         .attr('x', d3.event.x)
+    //         .attr('y', d3.event.y);
+    // }
+    // dragHandler(legend);
   // Create a drag handler and append it to the node object instead
   var drag_handler = d3.drag()
       .on("start",  (event, d) => node.filter(p => p === d).raise().attr("stroke", "black"))
@@ -699,13 +802,7 @@ svg.append("g")
     .attr("class", "legendSymbol");
     // .attr("transform", "translate(-450,180)");
 
-svg.select('.legendSymbol')
-.append("rect")
-.attr('x', 40.65)
-.attr('y',599.47)
-.attr('width', 123)
-.attr('height', 156)
-.style('fill','#000000');
+
 // var legendPath = d3.legendSymbol()
 // .scale(symbolScale)
 // .orient("vertical")
