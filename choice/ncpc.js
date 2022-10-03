@@ -491,7 +491,7 @@ var graph = {
 var color = d3.scaleOrdinal(d3.schemeCategory10);
 var legendColor = d3.scaleOrdinal()
 .domain(["Individual", "org", "Local Org", "State Org", "National Org", "CPC"])
-.range(["#DC322F", "#00AB93", "#DFA91E"]);
+.range(["#0076BA","#929292","#ff7f0e","#006C65", "#F27200", "#D41876"]);
 
 var triangleU = d3.symbol().type(d3.symbolTriangle)(),
 circle = d3.symbol().type(d3.symbolCircle)(),
@@ -506,7 +506,7 @@ var symbolScale =  d3.scaleOrdinal()
 
 var pointScale = d3.scaleOrdinal()
   .domain(["Individual", "CPC", "org", "Local Org", "State Org", "National Org"])
-  .range(["#1f77b4","#ff7f0e","#2ca02c","#d62728", "#DFA91E", "#1C4149"]);
+  .range(["#0076BA","#ff7f0e","#929292","#006C65", "#F27200", "#D41876"]);
 
 
   var title = svg
@@ -714,12 +714,12 @@ svg.append("g")
     .attr("class", "legendOrdinal")
     .attr("transform", "translate(-444,255)");
 
-// var legendOrdinal = d3.legendColor()
-//     .shape("path", d3.symbol().type(d3.symbolCircle).size(80)())
-//     .scale(legendColor);
+var legendOrdinal = d3.legendColor()
+    .shape("path", d3.symbol().type(d3.symbolCircle).size(80)())
+    .scale(legendColor);
 
-// svg.select(".legendOrdinal")
-//     .call(legendOrdinal);
+svg.select(".legendOrdinal")
+    .call(legendOrdinal);
 
 function ticked() {
     link
