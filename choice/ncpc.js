@@ -589,8 +589,12 @@ var legend = svg
 svg.select('.legend')
     .append("rect")
     .attr('width', 123)
-    .attr('height', 140)
-    .style('fill','#FCF3C8');
+    .attr('height', 150)
+    .attr('stroke', '#666')
+    .attr('stroke-width', 1)
+    .style('fill','#FCF3C8')
+    .style('fill-opacity', .6);
+
 
 // Individual
 svg.select('.legend')
@@ -636,6 +640,15 @@ svg.select('.legend')
     .attr('y', 110)
     .style('fill', '#ff42a1');
 
+// CPC
+svg.select('.legend')
+.append('path')
+.attr('d', d3.symbol(d3.symbolTriangle))
+.style('fill', '#B51800')
+.attr('transform', 'translate(19,137)');
+
+
+
 svg.select('.legend')
     .append('text')
     .attr('class', 'legendtext')
@@ -672,6 +685,12 @@ svg.select('.legend')
     .attr('x', 30)
     .attr('y', 120)
     .text('National Organization');
+svg.select('.legend')
+    .append('text')
+    .attr('class', 'legendtext')
+    .attr('x', 30)
+    .attr('y', 140)
+    .text('CPC');
 
 var resetBtnBox = svg
     .append("rect")
