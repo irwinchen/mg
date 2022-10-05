@@ -84,7 +84,7 @@ var graph = {
     {"id":"Crisis Pregnancy Center Of Lincoln County","type":"CPC"},
     {"id":"Crossroads Fellowship Foundation","type":"org"},
     {"id":"Crystal Regan","type":"Individual"},
-    {"id":"Cura Women's Clinic - Raleigh","type":"CPC"},
+    {"id":"Curo Women's Clinic - Raleigh","type":"CPC"},
     {"id":"Dameron Foundation","type":"org"},
     {"id":"Davie Pregnancy Care Center","type":"CPC"},
     {"id":"Delmarva Education Association","type":"org"},
@@ -234,7 +234,15 @@ var graph = {
     {"id":"McDowell Pregnancy Care Center","type":"CPC"},
     {"id":"Creative Choices Pregnancy Resource Center","type":"CPC"},
     {"id":"Not Forgotten Ministries","type":"CPC"},
-    {"id":"State Funding","type":"CPC"}],
+    {"id":"State of North Carolina","type":"State Org"},
+{"id":"Right to Life, Inc.","type":"National Org"},
+{"id":"North Carolina Pastors Network","type":"State Org"},
+{"id":"Watchmen on the Wall","type":"State Org"},
+{"id":"North Carolina Family Policy Council","type":"State Org"},
+{"id":"Human Coalition","type":"National Org"},
+{"id":"Human Coalition - Charlotte","type":"CPC"},
+{"id":"Earn While You Learn Curriculum","type":"National Org"},
+{"id":"Reverend Dean Nelson","type":"Individual"}],
     "links": [{"source":"A Hand Of Hope Pregnancy Resource Center","target":"Carolina Pregnancy Care Fellowship","description":"","amount":10411},
     {"source":"American Endowment Foundation","target":"Gateway Women's Care","description":"","amount":20000},
     {"source":"American Online Giving Foundation, Inc.","target":"Crisis Pregnancy Center Of Gaston County, Inc.","description":"","amount":15594},
@@ -421,7 +429,7 @@ var graph = {
     {"source":"Carolina Pregnancy Care Fellowship","target":"A Hand Of Hope Pregnancy Resource Center","description":"Affiliate","amount":null},
     {"source":"Carolina Pregnancy Care Fellowship","target":"Christian Life Home","description":"Affiliate","amount":null},
     {"source":"Carolina Pregnancy Care Fellowship","target":"Gate Pregnancy Resource Center","description":"Affiliate","amount":null},
-    {"source":"State Funding","target":"Carolina Pregnancy Care Fellowship","description":"Affiliate","amount":null},
+    {"source":"State of North Carolina","target":"Carolina Pregnancy Care Fellowship","description":"Affiliate","amount":1300000},
     {"source":"North Carolina Baptist Hospital","target":"Salem Pregnancy Care Center","description":"","amount":10000},
     {"source":"National Christian Charitable Foundation, Inc.","target":"Life Care Pregnancy Center, Inc.","description":"","amount":500},
     {"source":"National Christian Charitable Foundation, Inc.","target":"Carolina Pregnancy Care Fellowship","description":"","amount":2500},
@@ -486,7 +494,49 @@ var graph = {
     {"source":"The Stone Foundation","target":"Wilkes Crisis Pregnancy Center","description":"","amount":10000},
     {"source":"The Sylvester Family Foundation, Inc.","target":"Onslow Pregnancy Resource Center","description":"","amount":5000},
     {"source":"Vitamin Angel Alliance, Inc.","target":"Life Line Pregnancy Center","description":"","amount":15479},
-    {"source":"Winston Salem Foundation","target":"Salem Pregnancy Care Center","description":"","amount":37200}]
+    {"source":"Winston Salem Foundation","target":"Salem Pregnancy Care Center","description":"","amount":37200},
+    {"source":"Love Life Charlotte","target":"Concerned Women for America","description":"Partners","amount":null},
+    {"source":"NC Values Coalition","target":"Concerned Women for America","description":"Partners","amount":null},
+    {"source":"Right to Life, Inc.","target":"North Carolina Right to Life, Inc.","description":"Partners","amount":null},
+    {"source":"Love Life Charlotte","target":"Justin Reeder","description":"Founder","amount":null},
+    {"source":"Flip Benham","target":"Benham Brothers","description":"Family ","amount":null},
+    {"source":"Justin Reeder","target":"Benham Brothers","description":"Friends","amount":null},
+    {"source":"Justin Reeder","target":"Flip Benham","description":"Friends","amount":null},
+    {"source":"Love Life Charlotte","target":"Flip Benham","description":"Partners","amount":null},
+    {"source":"Love Life Charlotte","target":"Benham Brothers","description":"Partners ","amount":null},
+    {"source":"Cities4Life","target":"Benham Brothers","description":"Principals","amount":null},
+    {"source":"Cities4Life","target":"Love Life Charlotte","description":"Partners ","amount":null},
+    {"source":"American Family Association","target":"Christian Action League","description":"Affiliate","amount":null},
+    {"source":"NC Values Coalition","target":"Love Life Charlotte","description":"Partners","amount":null},
+    {"source":"North Carolina Pastors Network","target":"Christian Action League","description":"Partners","amount":null},
+    {"source":"North Carolina Pastors Network","target":"NC Values Coalition","description":"Partners","amount":null},
+    {"source":"North Carolina Pastors Network","target":"Watchmen on the Wall","description":"Partners","amount":null},
+    {"source":"North Carolina Pastors Network","target":"North Carolina Family Policy Council","description":"Partners","amount":null},
+    {"source":"North Carolina Pastors Network","target":"Mark Creech","description":"Speaker","amount":null},
+    {"source":"North Carolina Pastors Network","target":"Tami Fitzgerald","description":"Speaker","amount":null},
+    {"source":"Human Coalition","target":"Curo Women's Clinic - Raleigh","description":"Affiliate","amount":null},
+    {"source":"Human Coalition","target":"Tami Fitzgerald","description":"Supporter","amount":null},
+    {"source":"Carolina Pregnancy Care Fellowship","target":"Human Coalition","description":"Donor","amount":null},
+    {"source":"Human Coalition","target":"Human Coalition - Charlotte","description":"Affiliate","amount":null},
+    {"source":"Carolina Pregnancy Care Fellowship","target":"Curo Women's Clinic - Raleigh","description":"Partners ","amount":null},
+    {"source":"Family Research Council","target":"Christian Action League","description":"Affiliate","amount":null},
+    {"source":"Carolina Pregnancy Care Fellowship","target":"Earn While You Learn Curriculum","description":"Purchase","amount":null},
+    {"source":"Heartbeat international, Inc.","target":"Earn While You Learn Curriculum","description":"Purchase","amount":null},
+    {"source":"Care Net","target":"Earn While You Learn Curriculum","description":"Purchase","amount":null},
+    {"source":"National Institute of Family Life Advocate","target":"Human Coalition","description":"Partners ","amount":null},
+    {"source":"Human Coalition","target":"Save The Storks","description":"Partners ","amount":null},
+    {"source":"Human Coalition","target":"Alliance Defending Freedom","description":"Partners ","amount":null},
+    {"source":"State of North Carolina","target":"Human Coalition","description":"","amount":600000},
+    {"source":"Human Coalition","target":"Reverend Dean Nelson","description":"Vice President of Government Relations and Executive Director","amount":null},
+    {"source":"Care Net","target":"Reverend Dean Nelson","description":"Former Vice President of Underserved Outreach","amount":null},
+    {"source":"Family Research Council","target":"Reverend Dean Nelson","description":"Affiliate","amount":null},
+    {"source":"Americans United for Life","target":"Susan B. Anthony List","description":"Collaborators","amount":null},
+    {"source":"Ethics & Religious Liberty Council of the Southern Baptist Convention","target":"Susan B. Anthony List","description":"Collaborators","amount":null},
+    {"source":"Concerned Women for America","target":"Susan B. Anthony List","description":"Collaborators","amount":null},
+    {"source":"Americans United for Life","target":"NC Values Coalition","description":"Collaborators","amount":null},
+    {"source":"Operation Save America","target":"Flip Benham","description":"Affiliate","amount":null},
+    {"source":"Carolina Pregnancy Care Fellowship","target":"In His Hands Life Ministry","description":"","amount":11478},
+    {"source":"1st Choice Pregnancy Resources of Pamlico","target":"Havelock Pregnancy Resource Center","description":"Collaborators","amount":null}]
 };
 var color = d3.scaleOrdinal(d3.schemeCategory10);
 var legendColor = d3.scaleOrdinal()
@@ -729,11 +779,11 @@ node.on("click", showLinks(.1));
 node.on("dblclick", resetLinks);
     
     var simulation = d3.forceSimulation(graph.nodes)
-    .force("charge", d3.forceCollide().radius(40).iterations(2).strength(1.2))
+    // .force("charge", d3.forceCollide().radius(40).iterations(2).strength(1.2))
     // .nodes(graph.nodes)
-    // .force("charge", d3.forceManyBody().strength(-100))
+    .force("charge", d3.forceManyBody().strength(-200))
     // .force('center', d3.forceCenter(width / 2, height / 2))
-    .force("link", d3.forceLink(graph.links).id(d => d.id).strength(.5))
+    .force("link", d3.forceLink(graph.links).id(d => d.id).strength(.6))
     .on("tick", ticked);
     
     // Draw Labels
