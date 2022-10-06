@@ -5,7 +5,7 @@ var svg = d3.select("svg"),
     svg.append('defs').append('marker')
     .attr('id','arrowhead')
     .attr('viewBox','-0 -5 10 10')
-    .attr('refX',6)
+    .attr('refX',15)
     .attr('refY',0)
     .attr('orient','auto')
     .attr('markerWidth',6)
@@ -543,6 +543,7 @@ var legendColor = d3.scaleOrdinal()
 .domain(["Individual", "org", "Local Org", "State Org", "National Org", "CPC"])
 .range(["#0076BA","#929292","#ff7f0e","#006C65", "#FF42A1", "#B51700"]);
 
+
 var triangleU = d3.symbol().type(d3.symbolTriangle)(),
 circle = d3.symbol().type(d3.symbolCircle)(),
 cross = d3.symbol().type(d3.symbolCross)(),
@@ -597,7 +598,9 @@ var pointScale = d3.scaleOrdinal()
 var nodes = graph.nodes;
 // links between nodes
 var links = graph.links;
-
+var lineScale = d3.scaleLinear()
+    .domain(d3.extent(links, d => d.amount))
+    .range([1,12]);
 //   d3.json("data.json").then(function(graph) {
     // console.log(graph.links);
     var link = d3.select("svg g")
@@ -614,7 +617,9 @@ var links = graph.links;
             }
         })
         .style('opacity', .5)
-        .attr("stroke-width", 2)
+        .attr("stroke-width", function(d){
+            return lineScale(d.amount);
+        })
         .attr('marker-end', function(d){
             if (d.amount > 0) {
                 return 'url(#arrowhead)';
@@ -820,7 +825,7 @@ node.on("dblclick", resetLinks);
                 return thisOpacity;
             })
             // also style link accordingly
-            link.style("stroke-opacity", function(o) {
+            link.style("opacity", function(o) {
                 return o.source === i || o.target === i ? 1 : opacity;
             });
 
@@ -867,8 +872,8 @@ tippy('[data-tippy-content]', {
 
 
 // Draw Symbol Legend
-svg.append("g")
-    .attr("class", "legendSymbol");
+// svg.append("g")
+//     .attr("class", "legendSymbol");
     // .attr("transform", "translate(-450,180)");
 
 
