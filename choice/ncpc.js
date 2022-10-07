@@ -798,7 +798,7 @@ node.on("dblclick", resetLinks);
       })
       .attr('x', 10)
       .attr('y', 3)
-      .attr("opacity", .5);
+      .attr("opacity", .3);
 
     // build a dictionary of nodes that are linked
     var linkedByIndex = {};
@@ -820,7 +820,6 @@ node.on("dblclick", resetLinks);
                 return thisOpacity;
             });
             node.style("fill-opacity", function(o){
-                console.log(i, o);
                 thisOpacity = isConnected(i, o) ? 1 : opacity;
                 return thisOpacity;
             })
@@ -831,11 +830,10 @@ node.on("dblclick", resetLinks);
 
         };
     }
-
     function resetLinks() {
         node.style("stroke-opacity", 1);
         node.style("fill-opacity", 1);
-        link.style("stroke-opacity", 1);
+        link.style("opacity", 1);
         initZoom();
     }
     
