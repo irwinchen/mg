@@ -536,7 +536,20 @@ var graph = {
     {"source":"Americans United for Life","target":"NC Values Coalition","description":"Collaborators","amount":null},
     {"source":"Operation Save America","target":"Flip Benham","description":"Affiliate","amount":null},
     {"source":"Carolina Pregnancy Care Fellowship","target":"In His Hands Life Ministry","description":"","amount":11478},
-    {"source":"1st Choice Pregnancy Resources of Pamlico","target":"Havelock Pregnancy Resource Center","description":"Collaborators","amount":null}]
+    {"source":"1st Choice Pregnancy Resources of Pamlico","target":"Havelock Pregnancy Resource Center","description":"Collaborators","amount":null},
+    {"source":"State of North Carolina","target":"Mountain Area Pregnancy Services","description":null,"amount":550000},
+    {"source":"State of North Carolina","target":"Davie Pregnancy Care Center","description":null,"amount":260000},
+    {"source":"State of North Carolina","target":"Heartbeats Women's Center","description":null,"amount":325000},
+    {"source":"State of North Carolina","target":"Open Arms Crisis Pregnancy Center","description":null,"amount":500000},
+    {"source":"State of North Carolina","target":"Salem Pregnancy Care Center","description":null,"amount":100000},
+    {"source":"State of North Carolina","target":"H.E.L.P. Crisis Pregnancy Center","description":null,"amount":150000},
+    {"source":"State of North Carolina","target":"Cabarrus Women's Center, Inc.","description":null,"amount":250000},
+    {"source":"State of North Carolina","target":"Coastal Pregnancy Care Center, Inc.","description":null,"amount":250000},
+    {"source":"State of North Carolina","target":"Havelock Pregnancy Resource Center","description":null,"amount":250000},
+    {"source":"State of North Carolina","target":"The Epic Center (Eastern Pregnancy Information Clinic)","description":null,"amount":250000},
+    {"source":"State of North Carolina","target":"1st Choice Pregnancy Resources of Pamlico","description":null,"amount":250000},
+    {"source":"State of North Carolina","target":"Mountain Area Pregnancy Services","description":null,"amount":500000}
+]
 };
 var color = d3.scaleOrdinal(d3.schemeCategory10);
 var legendColor = d3.scaleOrdinal()
@@ -796,6 +809,7 @@ node.on("dblclick", resetLinks);
       .text(function(d) {
         return d.id;
       })
+      .attr('class', 'label')
       .attr('x', 10)
       .attr('y', 3)
       .attr("opacity", .3);
@@ -842,15 +856,7 @@ node.on("dblclick", resetLinks);
         initZoom();
     }
 
-    // var dragHandler = d3.drag()
-    //         .on('drag', dragged);
-    // function dragged() {
-    //     var current = d3.select(this);
-    //     current
-    //         .attr('x', d3.event.x)
-    //         .attr('y', d3.event.y);
-    // }
-    // dragHandler(legend);
+
   // Create a drag handler and append it to the node object instead
   var drag_handler = d3.drag()
       .on("start",  (event, d) => node.filter(p => p === d).raise().attr("stroke", "black"))
