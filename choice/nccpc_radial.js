@@ -903,7 +903,8 @@ function reset() {
 tippy('[data-tippy-content]', {
     allowHTML: true,
     hideOnClick: 'false',
-    trigger: 'mouseenter'
+    trigger: 'mouseenter',
+    offset: [0, -25]
 });
 
 function ticked() {
